@@ -5,8 +5,8 @@
     <classes>
       <class name="test_class.Get_tc1"/>
       <class name="test_class.Patch_tc1"/>
-      <class name="test_class.Post_tc1"/>
       <class name="test_class.Put_tc1"/>
+      <class name="test_class.Post_tc1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

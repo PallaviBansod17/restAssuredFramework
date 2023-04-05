@@ -18,7 +18,6 @@ public class Get_tc1 {
 		int responseStatuscode = 0;
 		String baseuri = get_request_repository.baseuri();
 		String resource = get_request_repository.resource();
-		System.out.println("status code: "+responseStatuscode);
 		
 		for (int i = 0; i < 5; i++) 
 		{
@@ -47,7 +46,7 @@ public class Get_tc1 {
 			JsonPath jsp = new JsonPath(responseBody);
 
 			int count = jsp.getInt("data.size()");
-			System.out.println("length of array:" + count);
+			//System.out.println("length of array:" + count);
 
 			int id[] = { 7, 8, 9, 10, 11, 12 };
 			String email[] = { "michael.lawson@reqres.in", "lindsay.ferguson@reqres.in", "tobias.funke@reqres.in",
@@ -71,8 +70,8 @@ public class Get_tc1 {
 				String res_Lname = jsp.getString("data[" + i + "].last_name");
 				String res_Avatar = jsp.getString("data[" + i + "].avatar");
 
-				System.out.println("id : " + res_id + "\nemail : " + res_email + "\nfirst_name : " + res_Fname
-						+ "\nlast_name : " + res_Lname + "\navatar : " + res_Avatar);
+				//System.out.println("id : " + res_id + "\nemail : " + res_email + "\nfirst_name : " + res_Fname
+						//+ "\nlast_name : " + res_Lname + "\navatar : " + res_Avatar);
 
 				// validate response body parameters
 				Assert.assertEquals(res_id, re_id);
